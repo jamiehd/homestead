@@ -10,15 +10,19 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Code
+    - map: C:\Code
       to: /home/vagrant/Code
 
 sites:
-    - map: homestead.app
-      to: /home/vagrant/Code/Laravel/public
+    - map: admin.oodleway.local
+      to: /home/vagrant/Code/oodleway/public
+    - map: static.oodleway.local
+      to: /home/vagrant/Code/oodleway/resources/assets
+    - map: servers.local
+      to: /home/vagrant/Code/servers/public
 
 databases:
-    - homestead
+    - oodleway
 
 # blackfire:
 #     - id: foo
