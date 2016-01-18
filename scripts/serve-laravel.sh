@@ -56,6 +56,10 @@ block="server {
     location ~ /\.ht {
         deny all;
     }
+	
+    location ~* \.(eot|ttf|woff)$ {
+	    add_header Access-Control-Allow-Origin *;
+    }
 
     ssl_certificate     /etc/nginx/ssl/$1.crt;
     ssl_certificate_key /etc/nginx/ssl/$1.key;
