@@ -18,8 +18,8 @@ sites:
       to: /home/vagrant/Code/oodleway/public
     - map: static.oodleway.local
       to: /home/vagrant/Code/oodleway/resources/assets
-    - map: servers.local
-      to: /home/vagrant/Code/servers/public
+    - map: oodleway.local
+      to: /home/vagrant/Code/oodleexternal/public
 
 databases:
     - oodleway
