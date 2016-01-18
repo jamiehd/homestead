@@ -57,7 +57,7 @@ block="server {
         deny all;
     }
 	
-    location ~* \.(eot|ttf|woff)$ {
+    location ~* \.(eot|ttf|woff|woff2)$ {
 	    add_header Access-Control-Allow-Origin *;
     }
 
