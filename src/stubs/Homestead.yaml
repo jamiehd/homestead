@@ -19,7 +19,7 @@ sites:
     - map: static.oodleway.local
       to: /home/vagrant/Code/oodleway/resources/assets
     - map: oodleway.local
-      to: /home/vagrant/Code/oodleexternal/public
+      to: /home/vagrant/Code/oodleway/public
 
 databases:
     - oodleway
