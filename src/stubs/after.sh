@@ -15,5 +15,11 @@ else
 	wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.1.1/elasticsearch-2.1.1.deb
 	dpkg -i elasticsearch-2.1.1.deb
 	rm elasticsearch-2.1.1.deb
+    echo Configuring Elastic CORS to allow external access
+	cat >>/etc/elasticsearch/elasticsearch.yml <<EOL
+ network.host: 0.0.0.0
+ http.cors.allow-origin: "/.*/"
+ http.cors.enabled: true
+EOL
 	service elasticsearch restart
 fi
