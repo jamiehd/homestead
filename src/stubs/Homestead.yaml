@@ -1,5 +1,5 @@
 ---
-ip: "192.168.10.10"
+ip: "10.10.10.10"
 memory: 2048
 cpus: 1
 provider: virtualbox
@@ -19,6 +19,8 @@ sites:
     - map: static.oodleway.local
       to: /home/vagrant/Code/oodleway/resources/assets
     - map: oodleway.local
+      to: /home/vagrant/Code/oodleway/public
+    - map: oodleway.external
       to: /home/vagrant/Code/oodleway/public
 
 databases:
